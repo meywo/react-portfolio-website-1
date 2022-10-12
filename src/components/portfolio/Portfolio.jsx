@@ -7,6 +7,53 @@ import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
 
+//DO NOT USE THE IMAGES IN PRODUCTION
+
+const data = [
+{
+  id:1,
+  image: IMG1,
+  title: 'Orion UI kit for Figma',
+  github: 'https://github.com',
+  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+},
+{
+  id:2,
+  image: IMG2,
+  title: 'Orion UI kit for Figma',
+  github: 'https://github.com',
+  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+},
+{
+  id:3,
+  image: IMG3,
+  title: 'Orion UI kit for Figma',
+  github: 'https://github.com',
+  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+},
+{
+  id:4,
+  image: IMG4,
+  title: 'Orion UI kit for Figma',
+  github: 'https://github.com',
+  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+},
+{
+  id:5,
+  image: IMG5,
+  title: 'Orion UI kit for Figma',
+  github: 'https://github.com',
+  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+},
+{
+  id:6,
+  image: IMG6,
+  title: 'Orion UI kit for Figma',
+  github: 'https://github.com',
+  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+}
+]
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
@@ -14,75 +61,27 @@ const Portfolio = () => {
     <h2>Portfolio</h2>
 
     <div className="container portfolio_container">
-        <article className='portfolio_item'>
-      <div className="portfolio_item-image">
-        <img src={IMG1} alt="" /> 
-         </div>
-         <h3>This is a portfolio item</h3> 
-         <div className="portfolio_item-cta">
-         <a href="https://github.com" className='btn' target='_blank'>Github</a>
-         <a href="https://dribble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-         </div>
-      </article>
-
-      <article className='portfolio_item'>
-      <div className="portfolio_item-image">
-         <img src={IMG2} alt="" />
-         </div>
-         <h3>This is a portfolio item</h3>
-         <div className="portfolio_item-cta">
-         <a href="https://github.com" className='btn' target='_blank'>Github</a>
-         <a href="https://dribble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-         </div>
-      </article>
-
-
-      <article className='portfolio_item'>
-        <div className="portfolio_item-image">
-       <img src={IMG3} alt='' />
-        </div>
-        <h3>This is a portfolio item</h3>
-        <div className="portfolio_item-cta">
-        <a href="https://github.com" className='btn' target='_blank'>Github</a>
-         <a href="https://dribble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-         </div>
-       </article>
-       
-       <article className='portfolio_item'>
-       <div className="portfolio_item-image">
-        <img src={IMG4} alt="" />
-        </div>
-        <h3>This is a portfolio item</h3>
-        <div className="portfolio_item-cta">
-        <a href="https://github.com" className='btn' target='_blank'>Github</a>
-         <a href="https://dribble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-         </div>
-      </article>
-
-      <article className='portfolio_item'>
-      <div className="portfolio_item-image">
-        <img src={IMG5} alt="" />
-        </div>
-        <h3>This is a portfolio item</h3>
-        <div className="portfolio_item-cta">
-       <a href="https://github.com" className='btn' target='_blank'>Github</a>
-         <a href="https://dribble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-      </div>
-      </article>
-
-      <article className='portfolio_item'>
-      <div className="portfolio_item-image">
-         <img src={IMG6} alt="" />
-        </div>
-        <h3>This is a portfolio item</h3>
-        <div className="portfolio_item-cta">
-      <a href="https://github.com" className='btn' target='_blank'>Github</a>
-         <a href="https://dribble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-      </div>
-      </article>
-    </div>
+        
+      {
+        data.map(({id, image, title, github, demo}) => {
+          return (
+          <article  key={id} className='portfolio_item'>
+          <div className="portfolio_item-image">
+          <img src={image} alt='Orion UI kit for Figma' /> 
+           </div>
+           <h3>This is a portfolio item</h3> 
+           <div className="portfolio_item-cta">
+           <a href={github} className='btn' target='_blank'>Github</a>
+           <a href={demo}className='btn btn-primary' target='_blank'>Live Demo</a>
+           </div>
+        </article>
+          )
+           })      
+      }  
+     </div>
     </section>
-  )
-}
-
+    )
+  }
+  
+ 
 export default Portfolio
