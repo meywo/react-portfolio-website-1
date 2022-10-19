@@ -11,9 +11,13 @@ const About = () => {
     <h5>Get To Know</h5>
     <h2>About Me</h2>
     <div className="container about_container">
-      <div clasName="about_me">
+      <div className="about_me">
         <div className="about_me-image"/>
+        <div className="rotated">
+          <div className="rotated_translate">
         <img src={ME} alt="about-me"/>
+        </div>
+        </div>
         </div>  
         <div className="about_content">
       <div className="about_cards">

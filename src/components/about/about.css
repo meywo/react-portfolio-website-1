@@ -5,29 +5,36 @@
 }
 
 /*---------Left side----------*/
+
 .about_me {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
-    background: linear-gradient(
-        45deg,
-        transparent,
-        var(--color-primary),
-        transparent
-    );
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     display: grid;
     place-items: center;
 }
 
 /*---------The image div itself---------*/
+
 .about_me-image {
     border-radius: 2rem;
     overflow: hidden;
-    transform-origin: rotate(10deg);
+   
+}
+
+.rotated {
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.rotated_translate {
+    transform:rotate(10deg); 
+    transition: var(--transition);
 }
 
 .about_me-image:hover {
-    transform: rotate(0);
+    transform:(0);
 }
 /*---------The right side ---------*/
 .about_cards {
