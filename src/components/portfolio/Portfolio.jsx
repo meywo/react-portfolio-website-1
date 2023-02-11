@@ -14,7 +14,7 @@ const data = [
   id:1,
   image: IMG1,
   title: 'Orion UI kit for Figma',
-  github: 'https://github.com',
+  github: 'https://mey1.github.io/',
   demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
 },
 {
