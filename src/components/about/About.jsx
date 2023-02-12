@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-about.jpg'
+import yellowlady from '../../assets/yellowlady.png'
 import{FaAward} from 'react-icons/fa'
 import{FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
@@ -12,10 +12,10 @@ const About = () => {
     <h2>About Me</h2>
     <div className="container about_container">
       <div className="about_me">
-        <div className="about_me-image"/>
+        <div className="yellowlady"/>
         <div className="rotated">
           <div className="rotated_translate">
-        <img src={ME} alt="about-me"/>
+        <img src={yellowlady} alt="yellowlady"/>
         </div>
         </div>
         </div>  
