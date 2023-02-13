@@ -1,7 +1,7 @@
 import React from 'react'
 import './experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
-import yellowlady from '../../assets/yellowlady.png'
+import peachlady from '../../assets/peachlady.png'
 
 const Experience = () => {
   return (
@@ -71,10 +71,10 @@ const Experience = () => {
       <div className="experience_content">
         <article className='experience_details'>
         <div className="about_me">
-        <div className="yellowlady"/>
+        <div className="peachlady"/>
         <div className="rotated">
           <div className="rotated_translate">
-        <img src={yellowlady} alt="yellowlady"/>
+        <img src={peachlady} alt="peachlady"/>
         </div>
         </div>
         </div>  
