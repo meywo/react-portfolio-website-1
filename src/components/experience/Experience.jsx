@@ -1,6 +1,7 @@
 import React from 'react'
 import './experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
+import yellowlady from '../../assets/yellowlady.png'
 
 const Experience = () => {
   return (
@@ -69,48 +70,14 @@ const Experience = () => {
       
       <div className="experience_content">
         <article className='experience_details'>
-          <BsPatchCheckFill className='experience_details-icon' />
-             <div>
-             <h4>HTML</h4>
-             <small className='text-light'>Experienced</small>
-             </div> 
-        </article>
-        <article className='experience_details'>
-          <BsPatchCheckFill className='experience_details-icon' />
-             <div>
-             <h4>CSS</h4>
-             <small className='text-light'>Experienced</small>
-             </div>
-        </article>
-        <article className='experience_details'>
-          <BsPatchCheckFill className='experience_details-icon' />
-            <div>
-            <h4>JavaScript</h4>
-            <small className='text-light'>Experienced</small>
-            </div>  
-        </article>
-        <article className='experience_details'>
-          <BsPatchCheckFill className='experience_details-icon' />
-            <div>
-            <h4>Bootstrap</h4>
-            <small className='text-light'>Experienced</small>
-            </div>
-        </article>
-        <article className='experience_details'>
-          <BsPatchCheckFill className='experience_details-icon' />
-            <div>
-            <h4>React</h4>
-            <small className='text-light'>Experienced</small>
-            </div>
-         
-        </article>
-        <article className='experience_details'>
-          <BsPatchCheckFill className='experience_details-icon' />
-            <div>
-            <h4>Tailwind</h4>
-            <small className='text-light'>Experienced</small>
-            </div>
-         
+        <div className="about_me">
+        <div className="yellowlady"/>
+        <div className="rotated">
+          <div className="rotated_translate">
+        <img src={yellowlady} alt="yellowlady"/>
+        </div>
+        </div>
+        </div>  
         </article>
         </div>
       </div>
