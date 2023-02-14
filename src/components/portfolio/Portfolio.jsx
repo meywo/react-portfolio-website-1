@@ -13,42 +13,42 @@ const data = [
 {
   id:1,
   image: IMG1,
-  title: 'Orion UI kit for Figma',
+  title: 'Landing Page',
   github: 'https://mey1.github.io/',
-  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+  demo:'https://best-app-landing-page.vercel.app/'
 },
 {
   id:2,
   image: IMG2,
-  title: 'Orion UI kit for Figma',
+  title: 'Form in Bootstrap',
   github: 'https://github.com',
-  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+  demo:'https://responsive-animated-login-form.vercel.app/'
 },
 {
   id:3,
   image: IMG3,
-  title: 'Orion UI kit for Figma',
+  title: 'Landing Page',
   github: 'https://github.com',
-  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+  demo:'https://run-club-landing-page.vercel.app/'
 },
 {
   id:4,
   image: IMG4,
-  title: 'Orion UI kit for Figma',
+  title: 'Twitter Clone',
   github: 'https://github.com',
-  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+  demo:'https://twitter-clone4.vercel.app/'
 },
 {
   id:5,
   image: IMG5,
-  title: 'Orion UI kit for Figma',
+  title: 'You Tube Clone',
   github: 'https://github.com',
   demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
 },
 {
   id:6,
   image: IMG6,
-  title: 'Orion UI kit for Figma',
+  title: 'Air B N B',
   github: 'https://github.com',
   demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
 }
@@ -67,9 +67,9 @@ const Portfolio = () => {
           return (
           <article  key={id} className='portfolio_item'>
           <div className="portfolio_item-image">
-          <img src={image} alt='Orion UI kit for Figma' /> 
+          <img src={image} alt={title}/> 
            </div>
-           <h3>This is a portfolio item</h3> 
+           <h3>{title}</h3> 
            <div className="portfolio_item-cta">
            <a href={github} className='btn' target='_blank'>Github</a>
            <a href={demo}className='btn btn-primary' target='_blank'>Live Demo</a>
