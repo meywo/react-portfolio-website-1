@@ -22,7 +22,7 @@ const data = [
   image: IMG2,
   title: 'Form in Bootstrap',
   github: 'https://github.com',
-  demo:'https://responsive-animated-login-form.vercel.app/'
+  demo:'https://responsiveform.vercel.app/'
 },
 {
   id:3,
