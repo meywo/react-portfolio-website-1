@@ -41,9 +41,9 @@ const data = [
 {
   id:5,
   image: IMG5,
-  title: 'You Tube Clone',
+  title: 'Memory Game',
   github: 'https://github.com',
-  demo:'https://dribbble.com/shots/19551584-Orion-UI-kit-for-Figma'
+  demo:'https://memory-game-js-xi.vercel.app/'
 },
 {
   id:6,
